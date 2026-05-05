@@ -15,12 +15,21 @@ const app = express();
 
 // Middleware
 // Middleware
+const allowedOrigins = [
+  'http://localhost:5173',
+  'https://task-management-jade-five.vercel.app'
+];
+
 app.use(cors({
-  origin: 'http://localhost:5173',
-  "https://task-management-jade-five.vercel.app",
-  credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization']
+  origin: function (origin, callback) {
+    // allow requests with no origin (mobile apps, curl, etc.)
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('CORS not allowed'));
+    }
+  },
+  credentials: true
 }));
 
 app.options('*', cors()); // ✅ FIX
