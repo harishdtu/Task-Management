@@ -6,8 +6,8 @@ A full-stack project & task management app with role-based access control, built
 
 ## 🚀 Live Demo
 
-- **Frontend:** `https://taskflow-frontend.up.railway.app`
-- **Backend API:** `https://taskflow-backend.up.railway.app`
+- **Frontend:** `[https://taskflow-frontend.up.railway.ap](https://task-management-jade-five.vercel.app/)p`
+- **Backend API:** `[https://taskflow-backend.up.railway.app](https://task-management-v0s3.onrender.com/)`
 
 **Demo Credentials:**
 ```
@@ -171,7 +171,7 @@ git push -u origin main
 ```
 
 ### Step 2: Deploy Backend
-1. Go to [railway.app](https://railway.app) → New Project → GitHub repo
+1. Go to https://render.com/ → New Project → GitHub repo
 2. Select the **backend** folder as root
 3. Add env vars:
    - `MONGODB_URI` (from MongoDB Atlas)
