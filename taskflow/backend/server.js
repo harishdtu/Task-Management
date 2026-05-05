@@ -31,7 +31,9 @@ app.use(express.json());
 app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', message: 'TaskFlow API is running', timestamp: new Date() });
 });
-
+app.get('/', (req, res) => {
+  res.send('🚀 TaskFlow API is running');
+});
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/projects', projectRoutes);
