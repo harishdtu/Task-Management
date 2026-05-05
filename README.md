@@ -6,8 +6,8 @@ A full-stack project & task management app with role-based access control, built
 
 ## 🚀 Live Demo
 
-- **Frontend:** `[https://taskflow-frontend.up.railway.ap](https://task-management-jade-five.vercel.app/)p`
-- **Backend API:** `[https://taskflow-backend.up.railway.app](https://task-management-v0s3.onrender.com/)`
+- **Frontend:** `https://task-management-jade-five.vercel.app/`
+- **Backend API:** `https://task-management-v0s3.onrender.com/`
 
 **Demo Credentials:**
 ```
